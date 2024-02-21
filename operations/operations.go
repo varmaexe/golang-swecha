@@ -1,3 +1,9 @@
+// Operators:
+// - Arithmetic operators: +, -, *, /, %.
+// - Comparison operators: ==, !=, <, <=, >, >=.
+// - Logical operators: &&, ||, !.
+// - Bitwise operators: &, |, ^, <<, >>
+
 package operations
 
 import "fmt"

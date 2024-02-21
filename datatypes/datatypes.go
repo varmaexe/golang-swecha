@@ -1,3 +1,8 @@
+// Data Types:
+// - Golang supports standard data types like int, float, bool, string.
+// - Additional data types include complex numbers, runes, and pointers.
+// - The var keyword is used for variable declaration, and Go infers the data type.
+
 package datatypes
 
 import "fmt"
