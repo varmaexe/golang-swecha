@@ -3,6 +3,7 @@ package main
 import (
 	"example/arrays"
 	"example/datatypes"
+	"example/maps"
 	"example/operations"
 	"example/slices"
 	"fmt"
@@ -34,6 +35,21 @@ func main() {
 		fmt.Println("Error:", err)
 	} else {
 		fmt.Println("Division:", result)
+	}
+
+	// Example usage of map functions
+	myMap := map[string]int{
+		"apple":  5,
+		"banana": 10,
+		"orange": 7,
+	}
+
+	maps.PrintMap(myMap)
+
+	if value, ok := maps.Lookup("banana", myMap); ok {
+		fmt.Println("Value of 'banana':", value)
+	} else {
+		fmt.Println("Key 'banana' not found")
 	}
 
 }
