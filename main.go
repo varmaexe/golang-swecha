@@ -2,6 +2,7 @@ package main
 
 import (
 	"example/arrays"
+	"example/controlstatements"
 	"example/datatypes"
 	"example/maps"
 	"example/operations"
@@ -52,4 +53,12 @@ func main() {
 		fmt.Println("Key 'banana' not found")
 	}
 
+	// if statements example
+	controlstatements.BasicIfExample(12)
+
+	// for loops example
+	controlstatements.ForLoopExample()
+
+	// switch statements example
+	controlstatements.SwitchExample(2)
 }
