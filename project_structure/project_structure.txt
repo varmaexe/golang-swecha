@@ -1,0 +1,35 @@
+Project structure guidelines
+• Go has some special conventions
+• E.g., `main` package, `internal`, `vendor` directories
+• Learnings from popular Go projects - https://github.com/golang- standards/project-layout
+
+
+
+internal
+• Special directory name recognized by Go which will prevent one package from being imported by another unless both share a common ancestor
+• For example, a package /a/b/c/internal/d/e/f can only be imported by code in the directory tree rooted at /a/b/c. It cannot be imported by code in /a/b/g or in any other repository
+
+
+Common directories
+• /cmd
+    • The directory name for each application should match the name of the
+        executable you want to have.
+    • Does not contain a lot of code, mostly flags and arguments for the executable
+
+• /internal
+    • Private packages, cannot be imported by others in any library or application. • Enforced by the compiler
+• /pkg
+    • Most other projects will look to import what’s in here
+    • Good way to explicitly communicate that the code is safe for use by others • Not universal but extremely popular
+• /vendor
+    • Contains dependencies for the project
+
+
+
+Other directories
+• /api – OpenAPI/Swagger, protobufs
+• /docs – design docs, architectures
+• /examples – examples for apps/libraries
+• /hack – Dockerfiles, Makefiles, shell scripts
+• /tests – e2e tests, integration tests
+• /web – static web assets, server-side templates

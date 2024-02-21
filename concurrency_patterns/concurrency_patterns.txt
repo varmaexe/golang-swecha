@@ -1,0 +1,23 @@
+Concurrency is not parallelism
+https://go.dev/blog/waza-talk
+• Concurrency is not parallelism, although it enables parallelism.
+• If you have only one processor, your program can still be concurrent,
+but it cannot be parallel.
+• On the other hand, a well-written concurrent program might run efficiently in parallel on a multiprocessor.
+
+
+
+
+Common concurrency patterns
+• https://go.dev/talks/2012/concurrency.slide
+• https://github.com/lotusirous/go-concurrency-patterns
+
+
+• A boring function - https://go.dev/play/p/8RQH-hbjZ7W
+• Hello channels - https://go.dev/play/p/amazakVmwFy
+• Generators - https://go.dev/play/p/9ykTDe7qLSw
+• Timeouts with channels - https://play.golang.org/p/WIqNvmxiYvn 
+• Stop channels - https://play.golang.org/p/rKYKqMeoFDq
+• Pipelines - https://go.dev/play/p/H6yn_c3TI0o 
+• Fan-in - https://go.dev/play/p/zLJvE8a6k0R
+
